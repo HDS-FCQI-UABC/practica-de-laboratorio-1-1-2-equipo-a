@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 from ProjectManagment import Project
+from ProjectManagment import Task
 
-class WorkBreakdownStructure(object):
-	def WorkBreakdownStructure(self):
+class Employee(object):
+	def Employee(self):
 		pass
 
 	def getName(self):
@@ -13,18 +14,14 @@ class WorkBreakdownStructure(object):
 		"""@ReturnType void"""
 		self.___name = aName
 
-	def getTheTasks(self):
-		return self.___theTasks
-
-	def setTheTasks(self, aTheTasks):
-		"""@ReturnType void"""
-		self.___theTasks = aTheTasks
-
 	def __init__(self):
 		self.___name = None
-		self.___theTasks = None
 		self._unnamed_Project_ = None
 		"""@AttributeType ProjectManagment.Project
 		# @AssociationType ProjectManagment.Project
+		# @AssociationMultiplicity 1"""
+		self._unnamed_Task_ = None
+		"""@AttributeType ProjectManagment.Task
+		# @AssociationType ProjectManagment.Task
 		# @AssociationMultiplicity 1"""
 
